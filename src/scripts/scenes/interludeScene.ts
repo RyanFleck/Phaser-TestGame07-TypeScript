@@ -33,5 +33,5 @@ export default class InterludeScene extends Phaser.Scene {
       }
     });
   }
-  
+
 }
