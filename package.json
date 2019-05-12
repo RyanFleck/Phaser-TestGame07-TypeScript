@@ -1,0 +1,52 @@
+{
+  "name": "phaser-testgame07",
+  "version": "1.0.0",
+  "description": "Test Game TS/Phaser",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack/webpack.dev.js",
+    "build": "webpack --config webpack/webpack.prod.js"
+  },
+  "keywords": [
+    "Phaser",
+    "Phaser 3",
+    "Phaser3",
+    "html5 game",
+    "TypeScript",
+    "webpack",
+    "starter"
+  ],
+  "author": {
+    "name": "Ryan Fleck",
+    "url": "https://github.com/ryanfleck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanfleck/phaser-testgame07-typescript.git"
+  },
+  "template": {
+    "name": "phaser-project-template",
+    "url": "https://github.com/yandeu/phaser-project-template",
+    "author": "Yannick Deubel (https://github.com/yandeu)"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^5.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1",
+    "webpack-obfuscator": "^0.18.0",
+    "workbox-webpack-plugin": "^4.0.0"
+  },
+  "dependencies": {
+    "phaser": "^3.16.2"
+  }
+}
