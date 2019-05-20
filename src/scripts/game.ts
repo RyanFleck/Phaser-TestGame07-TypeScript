@@ -1,11 +1,9 @@
 import 'phaser'
+import { CONSTANTS } from './constants'
 import MainScene from './scenes/mainScene'
 import PreloadScene from './scenes/preloadScene'
 import MenuScene from './scenes/menuScene'
 import InterludeScene from './scenes/interludeScene'
-
-const DEFAULT_WIDTH = 800
-const DEFAULT_HEIGHT = 600
 
 const config: GameConfig = {
   backgroundColor: '#ffffff',
@@ -13,8 +11,8 @@ const config: GameConfig = {
     parent: 'phaser-game',
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
-    width: DEFAULT_WIDTH,
-    height: DEFAULT_HEIGHT
+    width: CONSTANTS.width,
+    height: CONSTANTS.height
   },
   scene: [PreloadScene, MenuScene, InterludeScene, MainScene],
   physics: {
@@ -30,6 +28,7 @@ const config: GameConfig = {
 }
 
 window.addEventListener('load', () => {
-  let game = new Phaser.Game(config)
+  console.log(`Constant x: ${CONSTANTS.x}`);
+  let game = new Phaser.Game(config);
 })
 //
