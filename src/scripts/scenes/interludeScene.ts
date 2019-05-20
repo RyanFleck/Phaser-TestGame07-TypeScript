@@ -1,3 +1,4 @@
+import { CONSTANTS } from '../constants'
 import PhaserLogo from '../objects/phaserLogo'
 import FpsText from '../objects/fpsText'
 import { Time } from 'phaser';
@@ -8,7 +9,7 @@ export default class InterludeScene extends Phaser.Scene {
   nextScene: string;
 
   constructor() {
-    super({ key: 'InterludeScene' })
+    super({ key: CONSTANTS.scenes.interlude })
   }
   
   init(data) { 

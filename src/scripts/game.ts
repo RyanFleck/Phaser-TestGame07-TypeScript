@@ -28,7 +28,16 @@ const config: GameConfig = {
 }
 
 window.addEventListener('load', () => {
-  console.log(`Constant x: ${CONSTANTS.x}`);
+  // console.log(extractKeysToArray(CONSTANTS.scenes));
   let game = new Phaser.Game(config);
 })
+
+/*
+function extractKeysToArray( obj : Object ) {
+  const a : string[] = [];
+  Object.values(obj).forEach(x => a.push(x));
+  return a;
+}
+*/
+
 //

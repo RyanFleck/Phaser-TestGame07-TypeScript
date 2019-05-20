@@ -1,3 +1,4 @@
+import { CONSTANTS } from '../constants'
 import PhaserLogo from '../objects/phaserLogo'
 import FpsText from '../objects/fpsText'
 
@@ -5,7 +6,7 @@ export default class MenuScene extends Phaser.Scene {
   fpsText: Phaser.GameObjects.Text
 
   constructor() {
-    super({ key: 'MenuScene' })
+    super({ key: CONSTANTS.scenes.menu })
   }
 
   create() {

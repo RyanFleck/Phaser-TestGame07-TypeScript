@@ -1,3 +1,4 @@
+import { CONSTANTS } from '../constants'
 import PhaserLogo from '../objects/phaserLogo'
 import FpsText from '../objects/fpsText'
 
@@ -5,7 +6,7 @@ export default class MainScene extends Phaser.Scene {
   fpsText: Phaser.GameObjects.Text
 
   constructor() {
-    super({ key: 'MainScene' })
+    super({ key: CONSTANTS.scenes.main })
   }
 
   create() {

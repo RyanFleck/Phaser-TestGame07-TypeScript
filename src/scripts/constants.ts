@@ -1,16 +1,45 @@
+/*
+ * Game Constants
+ * ----------------------
+ * To comply with TypeScript rules, first define the
+ * type within one of the interfaces, then fix any
+ * incomplete interface errors in the exported 
+ * constants object.
+ */
+
 interface ICONSTANTS { 
-  x: number; // Test that constants object works.
 
   // Game Properties
   height: number;
   width: number;
+
+  // Complete in scenes interface below.
+  scenes: ISCENES;
+
+}
+
+interface ISCENES { 
+
+  preload: string;
+  main: string;
+  menu: string;
+  interlude: string;
+  
+
 }
 
 export const CONSTANTS: ICONSTANTS = {
-  x: 2,
   
-  height: 600,
-  width: 800,
+  height: 300,
+  width: 400,
+
+  scenes: {
+    preload: 'PreloadScene', // Needs to be first.
+    main: 'MainScene',
+    menu: 'MenuScene',
+    interlude: 'InterludeScene',
+  },
+  
 };
 
 
