@@ -20,9 +20,10 @@ export default class InterludeScene extends Phaser.Scene {
   create() {
     this.add
       .text(this.cameras.main.width/2, this.cameras.main.height/2, this.textDisplayed, {
-        color: '#000000',
+        color: CONSTANTS.textColor,
+        fontFamily: CONSTANTS.textFont,
         fontSize: 30,
-        align: 'center'
+        align: 'center',
       })
       .setOrigin(0.5, 0.5);
     

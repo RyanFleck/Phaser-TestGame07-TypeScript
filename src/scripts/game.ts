@@ -6,7 +6,7 @@ import MenuScene from './scenes/menuScene'
 import InterludeScene from './scenes/interludeScene'
 
 const config: GameConfig = {
-  backgroundColor: '#ffffff',
+  backgroundColor: CONSTANTS.bgColor,
   scale: {
     parent: 'phaser-game',
     mode: Phaser.Scale.FIT,

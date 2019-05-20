@@ -8,11 +8,14 @@ export default class PreloadScene extends Phaser.Scene {
   preload() {
     this.load.image('phaser-logo', 'assets/img/phaser-logo.png')
   }
-
+  
+  /*
+   * The Interlude parameters should be refactored into a TS interface.
+   */
   create() {
-    this.scene.start('InterludeScene', {
+    this.scene.start(CONSTANTS.scenes.interlude, {
       'interludeText': 'Ryan Fleck\nPrototype Game 07',
-      'nextScene': 'MenuScene'
+      'nextScene': CONSTANTS.scenes.menu
     });
 
     /**

@@ -12,6 +12,9 @@ interface ICONSTANTS {
   // Game Properties
   height: number;
   width: number;
+  bgColor: string;
+  textColor: string;
+  textFont: string;
 
   // Complete in scenes interface below.
   scenes: ISCENES;
@@ -24,7 +27,6 @@ interface ISCENES {
   main: string;
   menu: string;
   interlude: string;
-  
 
 }
 
@@ -32,6 +34,9 @@ export const CONSTANTS: ICONSTANTS = {
   
   height: 300,
   width: 400,
+  bgColor: '#000000',
+  textColor: '#FFFFFF',
+  textFont: 'monospace',
 
   scenes: {
     preload: 'PreloadScene', // Needs to be first.
