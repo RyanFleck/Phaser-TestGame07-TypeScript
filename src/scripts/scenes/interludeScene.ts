@@ -28,7 +28,7 @@ export default class InterludeScene extends Phaser.Scene {
       .setOrigin(0.5, 0.5);
     
     this.time.addEvent({
-      delay: 2000,
+      delay: CONSTANTS.interludeDelay,
       callbackScope: this,
       callback: () => { 
         this.scene.start(this.nextScene);

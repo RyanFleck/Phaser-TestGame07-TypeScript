@@ -1,17 +1,23 @@
 import { CONSTANTS } from '../constants'
-import PhaserLogo from '../objects/phaserLogo'
 import FpsText from '../objects/fpsText'
+import TextButton from '../objects/textButton'
 
 export default class MenuScene extends Phaser.Scene {
-  fpsText: Phaser.GameObjects.Text
+  fpsText: Phaser.GameObjects.Text;
+  startButton: Phaser.GameObjects.Text;
 
   constructor() {
     super({ key: CONSTANTS.scenes.menu })
   }
 
   create() {
-    new PhaserLogo(this, this.cameras.main.width / 2, 0)
     this.fpsText = new FpsText(this)
+    this.startButton = new TextButton(this, CONSTANTS.width/2, CONSTANTS.height/2, "Begin\nAgain", () => {
+      this.scene.start(CONSTANTS.scenes.interlude, {
+        'interludeText': 'So It Begins',
+        'nextScene': CONSTANTS.scenes.main
+      });
+    });
 
   }
 
