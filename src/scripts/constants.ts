@@ -17,6 +17,7 @@ interface ICONSTANTS {
   textFont: string;
   textTint: number;
   interludeDelay: number;
+  gravity: number;
 
   // Complete in scenes interface below.
   scenes: ISCENES;
@@ -40,8 +41,9 @@ export const CONSTANTS: ICONSTANTS = {
   textColor: '#FFFFFF',
   textFont: 'monospace',
   textTint: 0xFF3333,
+  gravity: 400,
 
-  interludeDelay: 500, // in ms.
+  interludeDelay: 10, // in ms. ~1000-2000 for release.
 
   scenes: {
     preload: 'PreloadScene', // Needs to be first.

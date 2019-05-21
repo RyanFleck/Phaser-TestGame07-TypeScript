@@ -12,17 +12,22 @@ export default class MenuScene extends Phaser.Scene {
 
   create() {
     this.fpsText = new FpsText(this)
-    this.startButton = new TextButton(this, CONSTANTS.width/2, CONSTANTS.height/2, "Begin\nAgain", () => {
+    this.startButton = new TextButton(this, CONSTANTS.width/2, CONSTANTS.height/2, "Begin\nagain", () => {
       this.scene.start(CONSTANTS.scenes.interlude, {
-        'interludeText': 'So It Begins',
+        'interludeText': 'Welcome back.',
         'nextScene': CONSTANTS.scenes.main
       });
     });
 
+    // Play with shapes:
+
+    // http://labs.phaser.io/edit.html?src=src/game%20objects\shapes\iso%20triangle.js
+
   }
 
   update() {
-    this.fpsText.update(this)
+    this.fpsText.update(this);
+    
   }
 }
 //

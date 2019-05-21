@@ -10,7 +10,9 @@ export default class MainScene extends Phaser.Scene {
   }
 
   create() {
-    new PhaserLogo(this, this.cameras.main.width / 2, 0)
+    new PhaserLogo(this, this.cameras.main.width / 2, 0, 0xFF3333)
+    new PhaserLogo(this, (this.cameras.main.width / 2) - 20, 0, 0x33FF33)
+    new PhaserLogo(this, (this.cameras.main.width / 2)+20, 0, 0x3333FF)
     this.fpsText = new FpsText(this)
 
   }
