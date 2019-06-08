@@ -48,6 +48,6 @@
   },
   "dependencies": {
     "phaser": "^3.16.2",
-    "querystringify": "^2.1.1"
+    "querystringify": ">=2.1.1"
   }
 }
